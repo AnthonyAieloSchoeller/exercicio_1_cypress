@@ -18,6 +18,6 @@ describe('carrinho', ()=> {
         cy.get('#shopping_cart_container').click()
         /*Observação: quando for usar um elemeto "id" para teste use o "#" */
 
-        cy.get('Sauce Labs Backpack').should('be.visible')
+        cy.contains('Sauce Labs Backpack').should('be.visible')
     })
 })
